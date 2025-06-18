@@ -4,7 +4,6 @@ import os
 # Set OpenAI API key
 
 #openai.api_key =  os.environ["op://AWS_training/OpenAPICred/credential"]
-
 # Access secret value from secret key reference using 1Password CLI tool
 def get_secret_value():
     return os.popen(f'op read "op://AWS_training/OpenAPICred/credential"').read().strip()
